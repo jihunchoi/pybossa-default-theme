@@ -47,6 +47,7 @@
             </section>
             {% endif %}
 
+            {#
             <section class="account update external-services">
                 <h2>External Services</h2>
                 <form method="post" action="{{ url_for('account.update_profile', name=current_user.name) }}">
@@ -76,6 +77,8 @@
                     <a class="btn btn-primary" style="margin-top:10px;" href="{{url_for('account.start_export', name=current_user.name)}}">{{_('Export your data')}}</a>
                 </div>
             </section>
+            #}
+
             <section class="account delete">
                 <h2>{{_('Delete your account')}}</h2>
                 <div class="alert alert-danger">
