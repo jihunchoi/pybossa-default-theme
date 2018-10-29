@@ -9,7 +9,7 @@
         {{ render_project_card_option(project, upload_method, title=_('Project Details'), explanation=_('Edit the name, description, etc.'), link=url_for('project.update', short_name=project.short_name), link_action_text=_('Edit'), icon='info-circle')}}
     </div>
     <div id="contributable_users" class="col-md-6">
-        {{ render_project_card_option(project, upload_method, title=_('Contributable Users'), explanation=_('Specify the users that can contribute to this project.'), link=url_for('project.update', short_name=project.short_name), link_action_text=_('Edit'), icon='user')}}
+        {{ render_project_card_option(project, upload_method, title=_('Contributable Users'), explanation=_('Specify the users that can contribute to this project.'), link=url_for('project.contributable_users', short_name=project.short_name), link_action_text=_('Edit'), icon='user')}}
     </div>
 </div>
 
